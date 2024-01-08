@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+.header {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1250px;
+  top: 28px;
+  left: -5rem;
+  padding-left: 10%;
+}
+
+.header a {
+  display: inline-block;
+  background: #F40612;
+  color: white;
+  align-self: flex-start;
+  padding: 8px 5px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.main {
+  height: 625px;
+  background: url(img/netflx-back.jpg) center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-child {
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+}
+
+.main h1 {
+  font-size: 60px;
+  max-width: 810px;
+}
+
+.main span {
+  font-size: 26px;
+  padding: 2rem;
+}
+
+.form-cta {
+  display: grid;
+  grid-template-columns: 500px 250px;
+  margin-top: 30;
+  margin-bottom: 10;
+  padding: 3%;
+}
+
+.form-cta input {
+  padding: 20px 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.form-cta button {
+  background: #F40612;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-cta button::after {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 19px;
+  background: url(../Netflix/img/seta.svg);
+  margin-left: 10px;
+}
+
+.form-cta button:hover {
+  background: #F40612;
+}
+
+.main p {
+  font-size: 19px;
+}
+
+.gradient {
+  background: rgba(0, 0, 0.4);
+  background-image: linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%,
+  rgba(0,0,0,0.8) 100%);
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
